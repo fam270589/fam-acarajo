@@ -1,4 +1,92 @@
 .container {
+	max-width: 1280px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	flex-grow: 1;
+}
+
+.top {
+  margin-block: 2rem;
+}
+
+.header1 {
+	font-size: 1rem;
+	font-weight: 500;
+	margin-block: 0.7rem;
+}
+
+.header2 {
+	color: var(--button-background);
+}
+
+.header2 span {
+	font-weight: 500;
+}
+
+.content {
+	margin-block: 1rem 2rem;
+	font-weight: 500;
+}
+
+.button {
+	border: none;
+	padding-inline: 0.7rem;
+	padding-block: 0.5rem;
+	background: var(--button-background);
+	color: white;
+	border-radius: 0.5rem;
+	font-weight: bold;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.buttonIcon {
+	font-size: 1.1rem;
+	margin-right: 0.5rem;
+}
+
+.image {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	object-fit: cover;
+	margin-block: 2rem;
+}
+
+.bottom {
+  margin-block: 3rem;
+  width: 100%;
   display: flex;
-  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentBottom {
+	margin-block: 1rem 2rem;
+	font-weight: 500;
+  text-align: center;
+}
+
+.bottomButtons {
+  width: 25rem;
+  display: flex;
+  justify-content: space-around;
+  margin-block: 1rem;
+}
+
+@media (min-width: 960px) {
+	.top {
+		display: flex;
+		align-items: center;
+	}
+  .container {
+    padding-inline: 5rem;
+  }
+	.header2 {
+		font-size: 2rem;
+	}
 }

@@ -23,7 +23,7 @@ const Navbar = (props: Props) => {
 			<div className={styles.menuDesktop}>
 				<Image alt="logo" src={Logo} height={50} />
 				<ul className={styles.menuItems}>
-					<a className={styles.link} href="#home">
+					<a className={styles.link} href="#">
 						Home
 					</a>
 					<a className={styles.link} href="#fitur">
@@ -48,7 +48,7 @@ const Navbar = (props: Props) => {
 						isMenuOpened ? styles.menuMobileShow : styles.menuMobileHidden
 					}
 				>
-					<a onClick={closeMobileMenu} className={styles.link} href="#home">
+					<a onClick={closeMobileMenu} className={styles.link} href="#">
 						Home
 					</a>
 					<a onClick={closeMobileMenu} className={styles.link} href="#fitur">

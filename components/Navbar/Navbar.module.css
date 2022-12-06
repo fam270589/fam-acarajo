@@ -7,7 +7,9 @@
 	-o-user-select: none;
 	user-select: none;
 
+	z-index: 100;
 	color: gray;
+	background: rgba(255, 255, 255, 0.9);
 }
 
 .menuDesktop {
@@ -45,7 +47,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	padding-bottom: 2rem;
+	padding-block: 0.5rem 2rem;
 	font-weight: 500;
 }
 
@@ -62,6 +64,15 @@
 }
 
 @media (min-width: 960px) {
+	.container {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		padding-inline: 2rem;
+		padding-block: 0.8rem;
+	}
 	.menuItems {
 		width: 15.7rem;
 		display: flex;
