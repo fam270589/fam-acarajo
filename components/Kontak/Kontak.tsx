@@ -10,7 +10,7 @@ type Props = {
 const Kontak = (props: Props) => {
 	return (
 		<div className={styles.container} id="kontak">
-			<video autoPlay loop className={styles.video}>
+			<video autoPlay muted loop className={styles.video}>
 				<source src={"./party.mp4"} type="video/mp4" />
 			</video>
 			<div className={styles.contents}>
