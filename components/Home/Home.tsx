@@ -29,7 +29,7 @@ const Home = (props: Props) => {
 					</button>
 				</div>
 				<div>
-					<Image className={styles.image} src={homeImg} alt="home Image" />
+					<Image className={styles.image} src={homeImg} alt="home Image" priority />
 				</div>
 			</div>
 

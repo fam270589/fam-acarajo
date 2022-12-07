@@ -18,23 +18,25 @@
 }
 
 .contents {
+	width: 100vw;
 	background: rgba(0, 0, 0, 0.3);
-  padding: 1rem 2rem;
   border-radius: 0.2rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	position: absolute;
 	color: #eee;
+	padding-block: 0.5rem;
 }
 
 .header {
-	font-size: 1.7rem;
+	font-size: 1.2rem;
 	font-weight: 500;
 }
 
 .text {
-	margin-block: 2rem;
+	margin-block: 1.2rem;
+	font-size: 0.9rem;
 	font-weight: 500;
   text-align: center;
 }
@@ -64,7 +66,17 @@
     border-radius: 1rem;
 		margin-bottom: 12rem;
 	}
+}
+
+@media (min-width: 480px) {
+	.contents {
+		width: 100%;
+	}
 	.header {
-		font-size: 2rem;
+		font-size: 1.5rem;
+	}
+	.text {
+		margin-block: 1.5rem;
+		font-size: 1rem;
 	}
 }

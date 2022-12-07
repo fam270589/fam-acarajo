@@ -10,6 +10,7 @@
 .header {
 	color: var(--button-background);
 	margin-bottom: 2rem;
+	text-align: center;
 }
 
 .header span {
@@ -26,5 +27,8 @@
 @media (min-width: 960px) {
 	.cards {
 		grid-template-columns: 1fr 1fr;
+	}
+	.header {
+		font-size: 2rem;
 	}
 }
